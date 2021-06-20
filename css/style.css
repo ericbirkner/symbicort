@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+body{
+	position: relative;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../img/AYUDA.VISUAL.SYMBI.MAYO_page-0001.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	position: fixed;
+	z-index: 0;
+}
+
+.sombra{
+	background-color: rgba(0,0,0, 0.5);
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+  	width: 100%;
+}
+
+.contenido{
+	position: relative;
+	z-index: 10;
+}
+
+.barra{
+	height: 100vh;
+	width: 100%;
+	max-width: 16.666667%;
+	overflow-y: auto;
+	position: fixed;
+	right: 0;
+}
+
+.barra::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.barra::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.barra::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.barra::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*
+img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+*/

@@ -60,12 +60,12 @@ body{
  
 /* Handle */
 .barra::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #E83433; 
 }
 
 /* Handle on hover */
 .barra::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #F80F01; 
 }
 /*
 img[usemap] {

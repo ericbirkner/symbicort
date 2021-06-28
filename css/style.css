@@ -5,11 +5,12 @@ html {
 }
 body{
 	position: relative;
+	padding-bottom: 22%
 }
 
 .bg-image {
   /* The image used */
-  background-image: url("../img/AYUDA.VISUAL.SYMBI.MAYO_page-0001.jpg");
+  background-image: url("../img/AYUDA.VISUAL.SYMBI.MAYO_pages-to-jpg-0001.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
@@ -41,19 +42,25 @@ body{
 }
 
 .barra{
-	height: 100vh;
+	height: 25vh;
 	width: 100%;
-	max-width: 16.666667%;
-	overflow-y: auto;
 	position: fixed;
-	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 11;
+	background-color: rgba(0,0,0,0.8);
 }
+
+.barra.hide{
+	bottom: -25%;
+}
+
 
 .barra::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+
 .barra::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
@@ -75,3 +82,84 @@ img[usemap] {
 	width: auto;
 }
 */
+.barra a{
+	display: block;
+	float: left;
+	margin: 0 15px;
+	text-align: center;
+	transition: 300ms;
+}
+
+.barra a:hover img {
+  opacity: 0.8;
+}
+
+.number{
+	position: absolute;
+	left: 5%;
+	bottom: 15px;
+	width: 22px;
+	height: 20px;
+	color: black;
+	box-shadow: grey;
+	z-index: 11;
+	border-radius: 12.5px;
+	background: white;
+	border:1px solid grey;
+	line-height: 18px;
+	text-align: center;
+	font-size: 15px;
+}
+.barra a img{	
+		
+}
+
+.cerrar{
+	position: fixed;
+	right: 5px;
+	margin-top: -30px;
+	bottom: 25%;
+	z-index: 12;
+	width: 30px;
+	text-align: center;
+	height: 30px;
+	padding: 5px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+
+.cerrar.hide{
+	bottom: 0;	
+}
+.cerrar.hide .wrap{
+	transform: rotate(180deg);	
+}
+
+
+.slick-prev{
+	left: 0;
+	z-index: 12;
+}
+.slick-next{
+	right: 10px;
+	z-index: 12;
+}
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+    opacity: .8;
+}
+
+.slick-next:before, .slick-prev:before{
+	font-size: 30px;
+	color: #ccc;
+}
+.slick-dots{
+	bottom: 0;
+}
+
+.slick-dotted.slick-slider{
+	margin-bottom: 0;
+}
